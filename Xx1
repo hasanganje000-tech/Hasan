@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayStation HM Kurdish</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0d12;
+      color: #fff;
+    }
+    header {
+      background: #151922;
+      padding: 20px 16px;
+      text-align: center;
+      border-bottom: 2px solid #087cff;
+    }
+    header h1 { margin: 0; color: #1685ff; font-size: 25px; }
+    header p { color: #c5cad4; margin-bottom: 0; }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 14px;
+      background: #10131a;
+    }
+    nav a { color: white; text-decoration: none; }
+    .hero {
+      text-align: center;
+      padding: 45px 18px;
+      background: linear-gradient(135deg, #101e39, #14151d, #062d5a);
+    }
+    .hero h2 { font-size: 30px; margin: 0 0 12px; }
+    .hero p { color: #d0d7e4; line-height: 1.9; }
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #087cff;
+      color: white;
+      text-decoration: none;
+      border-radius: 9px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    main { max-width: 1000px; margin: auto; padding: 24px 16px; }
+    h2.section-title { text-align: center; margin: 15px 0 25px; }
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .game {
+      background: #171b25;
+      border: 1px solid #292f3d;
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+    }
+    .cover {
+      height: 135px;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #073c80, #10131b);
+      display: grid;
+      place-items: center;
+      font-size: 44px;
+      margin-bottom: 15px;
+    }
+    .game h3 { margin: 10px 0; }
+    .price { color: #55a2ff; font-size: 19px; font-weight: bold; }
+    .game button { width: 100%; margin-top: 10px; }
+    .order {
+      margin-top: 35px;
+      padding: 22px;
+      background: #171b25;
+      border-radius: 14px;
+    }
+    label { display: block; margin-top: 14px; }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 7px;
+      border: 1px solid #3a4252;
+      border-radius: 8px;
+      background: #0d1119;
+      color: white;
+      font-size: 16px;
+    }
+    .note { color: #c5cad4; font-size: 13px; line-height: 1.8; }
+    footer {
+      text-align: center;
+      padding: 24px 12px;
+      color: #b8c0cf;
+      background: #151922;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎮 PlayStation HM Kurdish</h1>
+  <p>شوێنی یارییەکانی PlayStation 5 لە کوردستان</p>
+</header>
+
+<nav>
+  <a href="#home">سەرەتا</a>
+  <a href="#games">یارییەکان</a>
+  <a href="#order">داواکاری</a>
+</nav>
+
+<section class="hero" id="home">
+  <h2>بەخێربێیت بۆ PS HM Kurdish</h2>
+  <p>یارییە دڵخوازەکانت بدۆزەوە و بۆ داواکارییەکەت ئامادە بە.</p>
+  <a class="button" href="#games">بینینی یارییەکان</a>
+</section>
+
+<main>
+  <h2 class="section-title" id="games">🎯 یارییەکانی PS5</h2>
+
+  <section class="games">
+    <article class="game">
+      <div class="cover">⚽</div>
+      <h3>EA SPORTS FC</h3>
+      <p>یاریی تۆپی پێ</p>
+      <p class="price">نرخ: پەیوەندی بکە</p>
+      <button class="button" onclick="chooseGame('EA SPORTS FC')">داواکردن</button>
+    </article>
+
+    <article class="game">
+      <div class="cover">🏎️</div>
+      <h3>Gran Turismo 7</h3>
+      <p>یاریی ئۆتۆمبێلڕەوانی</p>
+      <p class="price">نرخ: پەیوەندی بکە</p>
+      <button class="button" onclick="chooseGame('Gran Turismo 7')">داواکردن</button>
+    </article>
+
+    <article class="game">
+      <div class="cover">🕷️</div>
+      <h3>Marvel's Spider-Man 2</h3>
+      <p>سەرکێشی و ئەکشن</p>
+      <p class="price">نرخ: پەیوەندی بکە</p>
+      <button class="button" onclick="chooseGame('Marvel Spider-Man 2')">داواکردن</button>
+    </article>
+
+    <article class="game">
+      <div class="cover">🌆</div>
+      <h3>Grand Theft Auto V</h3>
+      <p>یاریی جیهانی کراوە</p>
+      <p class="price">نرخ: پەیوەندی بکە</p>
+      <button class="button" onclick="chooseGame('Grand Theft Auto V')">داواکردن</button>
+    </article>
+  </section>
+
+  <section class="order" id="order">
+    <h2>🛒 داواکاریی یاری</h2>
+    <p>ئەم فۆڕمە لەم قۆناغەدا تەنها نموونەیە و هێشتا داواکارییەکان تۆمار ناکات.</p>
+
+    <form onsubmit="event.preventDefault(); alert('ئەم فۆڕمە هێشتا بە سیستەمی داواکاری پەیوەست نییە. قۆناغی داهاتوو پەیوەندییەکە زیاد دەکەین.');">
+      <label for="game">یاریی دڵخواز</label>
+      <select id="game" required>
+        <option value="">یارییەک هەڵبژێرە</option>
+        <option>EA SPORTS FC</option>
+        <option>Gran Turismo 7</option>
+        <option>Marvel Spider-Man 2</option>
+        <option>Grand Theft Auto V</option>
+      </select>
+
+      <label for="quantity">ژمارە</label>
+      <input id="quantity" type="number" min="1" value="1" required>
+
+      <label for="name">ناوی کڕیار</label>
+      <input id="name" type="text" placeholder="ناوی تەواوت" required>
+
+      <label for="phone">ژمارەی مۆبایل</label>
+      <input id="phone" type="tel" placeholder="ژمارەی مۆبایل" required>
+
+      <label for="address">ناونیشانی گەیاندن</label>
+      <textarea id="address" rows="3" placeholder="شار، گەڕەک و ناونیشان" required></textarea>
+
+      <button class="button" style="width:100%; margin-top:18px" type="submit">
+        ناردنی داواکاری
+      </button>
+    </form>
+    <p class="note">تکایە زانیاریی ڕاستەقینەی کڕیار لەم وەشانەی تاقیکردنەوەدا مەنووسە؛ فۆڕمەکە هێشتا بە سێرڤەر پەیوەست نییە.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© PlayStation HM Kurdish</p>
+  <p>هەموو مافەکان پارێزراون</p>
+</footer>
+
+<script>
+  function chooseGame(name) {
+    document.getElementById('game').value = name;
+    document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
